@@ -6,17 +6,23 @@
 
 body {
     height: 100vh;
-    display: flex;
     background-color: lightgreen;
 }
 
+.box {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
 .memory-game {
-    width: 540px;
-    height: 540px;
+    width: 440px;
+    height: 440px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
     perspective: 1000px;
+    border-radius: 10px;
+    padding: 10px 1px;
 }
 
 .card {
@@ -24,7 +30,6 @@ body {
     height: calc(33.33% - 63px);
     margin: 5px 8px;
     position: relative;
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
     transform: scale(1);
     transform-style: preserve-3d;
     transition: transform .5s;
@@ -53,3 +58,29 @@ body {
 .card-front {
     transform: rotateY(180deg);
 }
+
+.bottom {
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.bottom button {
+    width: 200px;
+    margin-left: -70px;
+    padding: 10px 30px;
+    font-weight: 800;
+    font-size: 16px;
+    border-radius: 8px;
+    background-color: #00cc00;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.bottom button:hover{
+    background-color: #009900;
+    color: #ff00bf;
+}
+
